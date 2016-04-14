@@ -20,7 +20,6 @@ p.grid-p{
   max-height: 400px;
 }
 .strong{
-
   font-size: 30px;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bolder;
@@ -64,9 +63,18 @@ p.grid-p{
 #navbar-logo-area{
   margin-bottom: 10px;
 }
+#individ-links{
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;*/
+  -webkit-transition: padding .5s; /* Safari */
+  transition: padding .5s;
+  border: none;
+}
 #individ-links:hover{
-  transition-delay: .2s;
-  margin-top: 5px;
+  padding-top: 25px;
   font-weight: bold;
 }
 #mission-modal{
