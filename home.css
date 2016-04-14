@@ -17,7 +17,20 @@ p.grid-p{
   top: 250px;
 }
 .carousel-inner{
-  max-height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 400px;
+  max-width: none;
+}
+img {
+  max-width: 100%;
+  width: auto   9;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
 }
 .strong{
 
@@ -76,4 +89,5 @@ p.grid-p{
 #mission-context{
   height: 300px;
   overflow-y: scroll;
+  background-color: #EFF9F7;
 }
