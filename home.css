@@ -1,3 +1,16 @@
+.left125{
+  float: left;
+  width: 12.5%;
+}
+.right125{
+  float: left;
+  width:12.5%;
+}
+.center75{
+  float: left;
+  width:75%;
+}
+
 .mission-text{
   font-size: 16px;
 }
@@ -53,7 +66,6 @@ p.grid-p{
   margin-left: 130px;
 }
 #carousel-bg{
-
   background-color: #9f0207;
 }
 #navbar-bg{
