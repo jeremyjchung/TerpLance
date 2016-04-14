@@ -1,0 +1,66 @@
+
+.logo{
+  width: 65px;
+  height: 65px;
+  margin-right: 10px;
+}
+p.grid-p{
+  text-align: left;
+  padding-left: 10px;
+}
+.carousel-caption{
+  top: 250px;
+}
+.carousel-inner{
+  max-height: 400px;
+}
+.strong{
+
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bolder;
+}
+.header-border{
+  background-color: #9f0207;
+  height: 4px;
+  margin-right: 130px;
+  margin-left: 130px;
+}
+#navbar-top{
+  background-color: #EFEFEF;
+  border: none;
+  margin-right: 130px;
+  margin-left: 130px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+#navbar-links{
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#myCarousel{
+  margin-right: 130px;
+  margin-left: 130px;
+}
+#info-grid{
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  margin-right: 130px;
+  margin-left: 130px;
+}
+#carousel-bg{
+
+  background-color: #9f0207;
+}
+#navbar-bg{
+  background-color: #EFEFEF;
+  margin-bottom: -20px;
+}
+#navbar-logo-area{
+  margin-bottom: 10px;
+}
+#individ-links:hover{
+  transition-delay: .2s;
+  margin-top: 5px;
+  font-weight: bold;
+}
