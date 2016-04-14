@@ -1,4 +1,9 @@
-
+.mission-text{
+  font-size: 16px;
+}
+.mission-logo{
+  height:50px;
+}
 .logo{
   width: 65px;
   height: 65px;
@@ -63,4 +68,12 @@ p.grid-p{
   transition-delay: .2s;
   margin-top: 5px;
   font-weight: bold;
+}
+#mission-modal{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 60px;
+}
+#mission-context{
+  height: 300px;
+  overflow-y: scroll;
 }
