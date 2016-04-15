@@ -28,7 +28,7 @@ $(document).ready(function() {
         //go to destination
         $('html,body').animate({
             scrollTop: dest
-        }, 2000, 'swing');
+        }, 1000, 'swing');
         hashTagActive = this.hash;
     }
 
