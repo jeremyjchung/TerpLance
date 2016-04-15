@@ -9,149 +9,150 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="home.css">
 
+
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="home.js"></script>
 
   </head>
   <body>
 
-    <div class="background">
-    <div class="bodycontainer">
-    <div id="navbar-bg">
-      <nav class="navbar navbar-default" id = "navbar-top">
-        <div class="container-fluid" id="nav-container">
-          <div id="mobile-wrap">
-            <a href="#">
-              <svg width="100%" height="8">
-                <rect width="50" height="8" style="fill:rgb(0,0,0);stroke-width:3">
-                Sorry, your browser does not support inline SVG.
-              </svg>
-              <svg width="100%" height="8">
-                <rect width="50" height="8" style="fill:rgb(0,0,0);stroke-width:3">
-                Sorry, your browser does not support inline SVG.
-              </svg>
-              <svg width="100%" height="8">
-                <rect width="50" height="8" style="fill:rgb(0,0,0);stroke-width:3">
-                Sorry, your browser does not support inline SVG.
-              </svg>
-            </a>
-          </div>
-          <div id="icon-and-name">
-            <a href="#" class="pull-left">
-                <img class="logo" src="./images/Logo.png">
-            </a>
-            <div class="navbar-header" id="nav-header">
-              <a class="navbar-brand" href="#">
-                <big id="strong">Terrapin Freelancers</big>
-              </a>
+    <div class="background-header">
+      <div class="bodycontainer">
+        <div id="navbar-bg">
+          <nav class="navbar navbar-default" id = "navbar-top">
+            <div class="container-fluid" id="nav-container">
+              <div id="mobile-wrap">
+                <a href="#">
+                  <svg width="100%" height="8">
+                    <rect width="50" height="8" style="fill:rgb(0,0,0);stroke-width:3">
+                    Sorry, your browser does not support inline SVG.
+                  </svg>
+                  <svg width="100%" height="8">
+                    <rect width="50" height="8" style="fill:rgb(0,0,0);stroke-width:3">
+                    Sorry, your browser does not support inline SVG.
+                  </svg>
+                  <svg width="100%" height="8">
+                    <rect width="50" height="8" style="fill:rgb(0,0,0);stroke-width:3">
+                    Sorry, your browser does not support inline SVG.
+                  </svg>
+                </a>
+              </div>
+              <div id="icon-and-name">
+                <a href="#" class="pull-left">
+                    <img class="logo" src="./images/Logo.png">
+                </a>
+                <div class="navbar-header" id="nav-header">
+                  <a class="navbar-brand" href="#">
+                    <big id="strong">Terrapin Freelancers</big>
+                  </a>
+                </div>
+              </div>
+              <ul class="nav navbar-nav navbar-right" id="navbar-links">
+                <li><a href="#" class="individ-links">Home</a></li>
+                <li><a href="#" class="individ-links">People</a></li>
+                <li><a href="#" class="individ-links">Portfolio</a></li>
+                <li><a href="#footer" id="contact_link" class="individ-links">Contact</a></li>
+              </ul>
             </div>
-          </div>
-          <ul class="nav navbar-nav navbar-right" id="navbar-links">
-            <li><a href="#" id="individ-links">Home</a></li>
-            <li><a href="#" data-toggle="modal" data-target="#mission-modal" id="individ-links">Mission</a></li>
-            <li><a href="#" id="individ-links">Contact</a></li>
-            <li><a href="#" id="individ-links">Donate</a></li>
-          </ul>
+          </nav>
         </div>
-      </nav>
+      </div>
     </div>
 
-    <div id="mission-modal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header" id="mission-modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h3 class="modal-title">
-              Our Mission
-            </h3>
-          </div>
+    <div class="background">
+      <div class="bodycontainer">
+        <div id="carousel-bg">
 
-          <div class="modal-body" id="mission-context">
-            <p class="mission-text"> Our goal is to create empowering websites for non-profit organizations.
-              We believe that we can help these organizations succeed, by creating fresh
-              modern looking websites for them. All of the websites we create are free (so long as it is for a non-profit).
-              However, please notice the donations tab in the upper right corner... once in a while, we do get
-              hungry. <br/><br/>
-              From a time before the dinosaurs, members of Terrapin Lancers have been coding to enhance
-              and sharpen our skills. Even the big old asteroid couldn't stop us from coding. <br/><br/>
-              We ask that you give us the chance and help us help you. In other words, the Terrapin
-              Lancers will scratch your back if you tickle ours. <br/><br/>
-              That is all. Now watch us work it baby!
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox" id="carousel-images">
+              <div class="item active">
+                <img src="./images/mckeldin_mall.jpg" alt="University of Maryland McKeldin Library">
+              </div>
+
+              <div class="item">
+                <img src="./images/testudo_beast.jpg" alt="Testudo the Terrific Terrapin!">
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="background-grid">
+      <div class="bodycontainer">
+        <div class="row" id="info-grid">
+          <div class="col-sm-4" id="info-grid-characteristics">
+            <h3>Professional</h3>
+            <p class="grid-p">
+              Crisp, official websites that will bolster the reputation of your organization
+            </p>
+            <h3>Creative</h3>
+            <p class="grid-p">
+              Captivating designs that will impress your clients
+            </p>
+            <h3>Custom</h3>
+            <p class="grid-p">
+              Provide us with your own customized template
+            </p>
+          </div>
+          <div class="col-sm-8" id="mission-container">
+            <h2>Our Mission</h2>
+            <p class="mission-text">
+              Terrapin Lancers is an University of Maryland sponsored club, dedicated to building Professional,
+              Creative, and Custom websites for non-profit and startup companies. We believe that we can use our
+              knowledge of web technologies to empower others. <br/><br/>
+              Terrapin Lancers tis nan wizos mud mardand hipids pas, hobaha da hagoma hunwax, sexmom,
+              yee tiefun websites nunu non-colcad yee souulu gorget. alsbelieve pak alspudum uso noor vexmag mud
+              web efflei da empower madlex.
+
             </p>
           </div>
         </div>
+
       </div>
     </div>
 
-    <div id="carousel-bg">
-
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox" id="carousel-images">
-          <div class="item active">
-            <img src="./images/mckeldin_mall.jpg" alt="University of Maryland McKeldin Library">
-          </div>
-
-          <div class="item">
-            <img src="./images/testudo_beast.jpg" alt="Testudo the Terrific Terrapin!">
+    <div class="background-footer" id="footer">
+      <div class="bodycontainer">
+        <div class="contact-footer">
+          <div class="row">
+            <div class="col-sm-7"></div>
+            <div class="col-sm-2">
+              <h4 class="contact-text">Navigation</h4>
+              <a href="#" id="footer-individ-links">People</a>
+              <a href="#" id="footer-individ-links">Portfolio</a>
+              <a href="#" id="footer-individ-links">Contact</a>
+            </div>
+            <div class="col-sm-3">
+              <h4 class="contact-text">Contact Us</h4>
+              <a href="#" id="footer-individ-links">911-911-9111</a>
+              <a href="#" id="footer-individ-links">TerrapinFreelancers@gmail.com </a>
+              <a href="#" id="footer-individ-links">7030 Preinkert Dr. College Park, MD 20742</a>
+            </div>
           </div>
         </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </div>
-
-    <div class="row" id="info-grid">
-      <div class="col-sm-4">
-          <h2>Our Goal</h2>
-          <p class="grid-p">We are dedicated to helping organizations by designing and creating
-            striking websites for them. </p>
-      </div>
-      <div class="col-sm-4">
-        <h2>Who We Are</h2>
-        <p class="grid-p">We are poor college children, so hold on to your money, wives, and kids. Because
-          we coming. </p>
-      </div>
-      <div class="col-sm-4">
-        <h2>Freelo</h2>
-        <p class="grid-p">This is literally slave labor, so you should take it. This is what I call a
-          win-win situation.</p>
-      </div>
-    </div>
-
-</div>
-</div>
-
-<script>
-$(window).resize(function() {
-    if( $(this).width() < 500 ) {
-        document.getElementById("strong").innerHTML = "TerpLance";
-        document.getElementById("icon-and-name").style.width="300px";
-    }
-});
-$(window).resize(function() {
-    if( $(this).width() >= 500 ) {
-        document.getElementById("strong").innerHTML = "Terrapin Freelancers";
-        document.getElementById("icon-and-name").style.width="370px";
-    }
-});
-</script>
 
   </body>
 </html>
