@@ -1,8 +1,16 @@
+.col-sm-8{
+  width: 66%;
+}
+.col-sm-7{
+  width: 58%;
+}
+
+.carousel-img{
+    margin-left: auto;
+    margin-right: auto;
+}
 .fb-logo{
   width: 100px;
-}
-.contact-text{
-
 }
 .contact-footer{
   padding-top: 10px;
@@ -33,11 +41,14 @@
   padding:0;
 }
 .row > [class*='col-'] {          /* make columns in row the same height */
+  /*display: -webkit-flex;
+  -webkit-flex-direction: column;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;*/
 }
 .bodycontainer{
   width:80%;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -69,13 +80,21 @@
 .carousel-caption{
   top: 250px;
 }
-.carousel-inner{
-  /*height: 400px;*/
+.pull-left{
+  float: left;
+  display: -webkit-inline-block;
+  display: -inline-block;
+  width:65px;
+  height:65px;
+
 }
 #strong{
   font-size: 30px;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bolder;
+  color: grey;
+  display: -webkit-inline-block;
+  display: inline-block;
 }
 .header-border{
   background-color: #9f0207;
@@ -98,6 +117,7 @@
 #myCarousel{
   /*margin-right: 130px;
   margin-left: 130px;*/
+  background-color: #9f0207;
 }
 #info-grid{
   font-family: 'Work Sans', sans-serif;
@@ -121,6 +141,7 @@
   margin-left: 0px;
 }
 .individ-links{
+  display: -webkit-block;
   display: block;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -148,11 +169,14 @@
   display:none;
 }
 #mobile-wrap a{
+  display:-webkit-block;
   display:block;
+
 }
 #icon-and-name {
-  width:370px;
+  width:380px;
   float:left;
+  white-space:nowrap;
 }
 @media only screen and (max-width: 1000px){
   .bodycontainer{
@@ -167,6 +191,11 @@
     display: none;
   }
   #mobile-wrap{
+    width:50px;
+    display:-webkit-block;
     display:block;
+  }
+  [class*='col-'] {          /* make columns in row the same height */
+    width:100%;
   }
 }
