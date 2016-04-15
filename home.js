@@ -1,9 +1,14 @@
 $(document).ready(function() {
 
+  if( $(this).width() < 500 ) {
+      document.getElementById("strong").innerHTML = "TerpLance";
+      document.getElementById("icon-and-name").style.width="250px";
+  }
+
   $(window).resize(function() {
       if( $(this).width() < 500 ) {
           document.getElementById("strong").innerHTML = "TerpLance";
-          document.getElementById("icon-and-name").style.width="300px";
+          document.getElementById("icon-and-name").style.width="250px";
       }
   });
   $(window).resize(function() {
