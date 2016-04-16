@@ -1,3 +1,5 @@
+/*col percentages need to be fixed because
+safari/firefox does not render the percents well*/
 .col-sm-8{
   width: 66%;
 }
@@ -7,9 +9,6 @@
 .carousel-img{
     margin-left: auto;
     margin-right: auto;
-}
-.fb-logo{
-  width: 100px;
 }
 .contact-footer{
   padding-top: 10px;
@@ -37,20 +36,11 @@
   margin: 0;
   padding:0;
 }
-.row > [class*='col-'] {          /* make columns in row the same height */
-  /*display: -webkit-flex;
-  -webkit-flex-direction: column;
-  display: flex;
-  flex-direction: column;*/
-}
 .bodycontainer{
   width:80%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
-.background{
-  background-color: #9f0207;
 }
 .background-footer{
   background-color: #510202;
@@ -97,13 +87,13 @@
   background-color: #9f0207;
   height: 4px;
 }
-#navbar-top{
+.navbar.navbar-default{
   background-color: #EFEFEF;
   border: none;
   padding-top: 13px;
   padding-bottom: 13px;
 }
-#navbar-links{
+.nav.navbar-nav.navbar-right{
   font-size: 20px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -112,9 +102,6 @@
 }
 #info-grid{
   font-family: 'Work Sans', sans-serif;
-  background-color: white;
-}
-#info-grid-characteristics{
   background-color: white;
 }
 #carousel-bg{
@@ -144,11 +131,11 @@
   padding-top: 25px;
   font-weight: bold;
 }
-#footer-individ-links{
+a.footer-individ-links{
   text-align: left;
   color: grey;
 }
-#footer-individ-links:hover{
+a.footer-individ-links:hover{
   color: white;
   text-decoration: none;
 }
@@ -160,12 +147,14 @@
 #mobile-wrap a{
   display:-webkit-block;
   display:block;
-
 }
 #icon-and-name {
   width:380px;
   float:left;
   white-space:nowrap;
+}
+#icon-and-name a{
+  text-decoration: none;
 }
 @media only screen and (max-width: 1000px){
   .bodycontainer{
