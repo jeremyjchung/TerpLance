@@ -128,8 +128,24 @@ safari/firefox does not render the percents well*/
   border: none;
 }
 .individ-links:hover{
+  color:black;
   padding-top: 25px;
-  font-weight: bold;
+  /*font-weight: bold;*/
+}
+li a.active {
+  color: black;
+  display: -webkit-block;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;*/
+  border: none;
+  font-weight:bold;
+  text-decoration: none;
+}
+li a.active:visited {
+  color: black;
 }
 a.footer-individ-links{
   text-align: left;
