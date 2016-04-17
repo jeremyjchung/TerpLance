@@ -1,16 +1,15 @@
+/*col percentages need to be fixed because
+safari/firefox does not render the percents well*/
+
 .col-sm-8{
   width: 66%;
 }
 .col-sm-7{
   width: 58%;
 }
-
 .carousel-img{
     margin-left: auto;
     margin-right: auto;
-}
-.fb-logo{
-  width: 100px;
 }
 .contact-footer{
   padding-top: 10px;
@@ -28,42 +27,44 @@
   text-align: center;
   background-color: white;
   font-family: 'Work Sans', sans-serif;
-  border-left-style: solid;
-  border-left-width: 1px;
 }
 .row{
-  display: -webkit-box;
+  /*display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;*/
+  display: -webkit-block;
+  display: -webkit-block;
+  display: -ms-block;
+  display: block;
+  /*flex-wrap: wrap;*/
   margin: 0;
   padding:0;
+
 }
-.row > [class*='col-'] {          /* make columns in row the same height */
-  /*display: -webkit-flex;
-  -webkit-flex-direction: column;
-  display: flex;
-  flex-direction: column;*/
-}
+
 .bodycontainer{
   width:80%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-.background{
-  background-color: #9f0207;
-}
 .background-footer{
   background-color: #510202;
+  float:left;
+  width:100%;
 }
 .background-grid{
+  float:left;
+  width:100%;
   background-color: white;
   border-bottom-style: solid;
   border-width: 1px;
 }
 .background-header{
+  width:100%;
+  float:left;
   background-color: #EFEFEF;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -99,36 +100,27 @@
 .header-border{
   background-color: #9f0207;
   height: 4px;
-  /*margin-right: 130px;
-  margin-left: 130px;*/
 }
-#navbar-top{
+.navbar.navbar-default{
   background-color: #EFEFEF;
   border: none;
-  /*margin-right: 130px;
-  margin-left: 130px;*/
   padding-top: 13px;
   padding-bottom: 13px;
 }
-#navbar-links{
+.nav.navbar-nav.navbar-right{
   font-size: 20px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 #myCarousel{
-  /*margin-right: 130px;
-  margin-left: 130px;*/
   background-color: #9f0207;
 }
 #info-grid{
   font-family: 'Work Sans', sans-serif;
   background-color: white;
-  /*margin-right: 130px;
-  margin-left: 130px;*/
 }
-#info-grid-characteristics{
-  background-color: white;
-}
-#carousel-bg{
+#red-bg{
+  float:left;
+  width:100%;
   background-color: #9f0207;
 }
 #navbar-bg{
@@ -152,14 +144,30 @@
   border: none;
 }
 .individ-links:hover{
+  color:black;
   padding-top: 25px;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
-#footer-individ-links{
+li a.active {
+  color: black;
+  display: -webkit-block;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;*/
+  border: none;
+  font-weight:bold;
+  text-decoration: none;
+}
+li a.active:visited {
+  color: black;
+}
+a.footer-individ-links{
   text-align: left;
   color: grey;
 }
-#footer-individ-links:hover{
+a.footer-individ-links:hover{
   color: white;
   text-decoration: none;
 }
@@ -171,12 +179,14 @@
 #mobile-wrap a{
   display:-webkit-block;
   display:block;
-
 }
 #icon-and-name {
   width:380px;
   float:left;
   white-space:nowrap;
+}
+#icon-and-name a{
+  text-decoration: none;
 }
 @media only screen and (max-width: 1000px){
   .bodycontainer{

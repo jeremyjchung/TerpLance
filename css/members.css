@@ -1,0 +1,36 @@
+.img-responsive{
+    width:100%;
+    float:left;
+}
+.profile{
+  float:left;
+  display: block;
+  position: relative;
+  margin: 0;
+  width: 33.33%;
+}
+.name{
+  position:absolute;
+  height:100%;
+  width:100%;
+  text-align: center;
+  display:block;
+  background-color: rgba(159,2,7, 0.8);
+  opacity:0;
+  transition-duration: .4s;
+}
+.name-content{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color:white;
+  font-size: 18px;
+}
+.position{
+  font-size:16px;
+  color:#d2cbcc;
+}
+.profile:hover .name{
+  opacity:1;
+}
