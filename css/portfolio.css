@@ -1,0 +1,28 @@
+.col-sm-4{
+  float:left;
+}
+.col-sm-12{
+  float:left;
+}
+.image-container{
+  width:100%;
+  float:left;
+  position:relative;
+}
+.img-description{
+  text-align: center;
+}
+.img-enlarged{
+  position: absolute;
+  display: block;
+  z-index: 2;
+  top:-25%;
+  left:-25%;
+  max-width:200%;
+  height:auto;
+  opacity: 0;
+  transition-duration: .75s;
+}
+.image-container:hover img.img-enlarged{
+  opacity:1;
+}
