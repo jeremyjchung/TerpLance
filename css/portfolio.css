@@ -12,17 +12,20 @@
 .img-description{
   text-align: center;
 }
-.img-enlarged{
-  position: absolute;
+.img-responsive{
   display: block;
-  z-index: 2;
-  top:-25%;
-  left:-25%;
-  max-width:200%;
-  height:auto;
-  opacity: 0;
-  transition-duration: .75s;
+  padding:2px;
 }
-.image-container:hover img.img-enlarged{
-  opacity:1;
+a img.img-responsive:hover{
+  border-style: solid;
+  border-width: thin;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.modal-dialog{
+  min-width:80%;
+  max-width:90%;
+}
+h3{
+  margin-bottom: 0px;
 }
