@@ -17,6 +17,11 @@ $(document).ready(function() {
           document.getElementById("icon-and-name").style.width="370px";
       }
   });
+  $(window).resize(function() {
+      if( $(this).width() >= 775 ) {
+          $('#hamburger_modal').modal("hide");
+      }
+  });
 
   var hashTagActive = "";
   $('#contact_link').click(function (event) {

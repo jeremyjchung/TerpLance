@@ -1,6 +1,32 @@
 /*col percentages need to be fixed because
 safari/firefox does not render the percents well*/
-
+.modal-content{
+  background-color: #340404;
+}
+.modal.fade{
+  top: -25%;
+  -webkit-transition: opacity 0.3s linear, top 0.5s ease-out;
+     -moz-transition: opacity 0.3s linear, top 0.5s ease-out;
+       -o-transition: opacity 0.3s linear, top 0.5s ease-out;
+          transition: opacity 0.3s linear, top 0.5s ease-out;
+}
+.modal.fade.in{
+  top: 0%;
+}
+.modal.fade .modal-dialog {
+  width: 97%;
+}
+.hamburger-links{
+  margin-left: 40%;
+  font-size: 20px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.hamburger-links:hover{
+  padding-left: 1px;
+  text-decoration: none;
+  color:#F3EFEF;
+}
 .col-sm-8{
   width: 66%;
 }
