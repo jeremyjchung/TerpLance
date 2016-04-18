@@ -171,6 +171,9 @@ a.footer-individ-links:hover{
   color: white;
   text-decoration: none;
 }
+.svg-image{
+  padding-right: 5px;
+}
 #mobile-wrap{
   width:50px;
   float:right;
