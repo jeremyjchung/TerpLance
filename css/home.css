@@ -210,7 +210,7 @@ a.footer-individ-links:hover{
   display:block;
 }
 #icon-and-name {
-  width:380px;
+  width:370px;
   float:left;
   white-space:nowrap;
 }
@@ -222,7 +222,7 @@ a.footer-individ-links:hover{
     width:100%;
   }
 }
-@media only screen and (max-width: 775px){
+@media only screen and (max-width: 790px){
   .bodycontainer{
     width:100%;
   }
