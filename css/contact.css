@@ -1,3 +1,10 @@
 .work_info{
   font-size: 20px;
+  margin:5px;
+}
+h2{
+  margin:10px;
+}
+.background-footer div.bodycontainer{
+  min-height:150px;
 }

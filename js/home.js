@@ -1,23 +1,45 @@
+// var menu = document.getElementById("m-menu");
+// var mask = document.getElementById("m-mask");
+// var mobileButton = document.getElementById("mobile-wrap");
+// var body = document.getElementsByTagName("body");
+// function openMobileMenu(){
+//   menu.classList.add('active');
+//   mask.classList.add('active');
+//   body.classList.add('active');
+// }
+// function closeMobileMenu(){
+//   menu.classList.remove('active');
+//   menu.classList.remove('active');
+//   body.classList.remove('active');
+// }
+
 $(document).ready(function() {
+
+  $('#mobile-wrap').click(function (event) {
+    document.getElementById("m-menu").classList.add('active');
+    document.getElementById("m-mask").classList.add('active');
+    document.getElementsByTagName("body").classList.add('active');
+  });
+  $('#m-mask').click(function(){
+    document.getElementById("m-menu").classList.remove('active');
+    document.getElementById("m-mask").classList.remove('active');
+  });
+
 
   if( $(this).width() < 500 ) {
       document.getElementById("strong").innerHTML = "TerpLance";
-      document.getElementById("icon-and-name").style.width="250px";
+      document.getElementById("icon-and-name").style.width="225px";
   }
 
   $(window).resize(function() {
       if( $(this).width() < 500 ) {
           document.getElementById("strong").innerHTML = "TerpLance";
-          document.getElementById("icon-and-name").style.width="250px";
+          document.getElementById("icon-and-name").style.width="225px";
       }
-  });
-  $(window).resize(function() {
       if( $(this).width() >= 500 ) {
           document.getElementById("strong").innerHTML = "Terrapin Freelancers";
           document.getElementById("icon-and-name").style.width="370px";
       }
-  });
-  $(window).resize(function() {
       if( $(this).width() >= 775 ) {
           $('#hamburger_modal').modal("hide");
       }

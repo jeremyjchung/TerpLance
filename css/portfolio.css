@@ -12,6 +12,9 @@
 .img-description{
   text-align: center;
 }
+.modal-footer p.img-description{
+  text-align: left;
+}
 .img-responsive{
   display: block;
   padding:2px;
