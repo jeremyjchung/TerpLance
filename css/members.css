@@ -9,6 +9,7 @@
   position: relative;
   margin: 0;
   width: 33.33%;
+  cursor: pointer;
 }
 .name{
   position:absolute;
@@ -27,13 +28,24 @@
   text-align: center;
   color:white;
   font-size: 18px;
+  transition-duration: .4s;
+  overflow: hidden;
 }
 .position{
   font-size:16px;
   color:#d2cbcc;
 }
-.profile:hover .name{
-  opacity:1;
+code{
+  color: inherit;
+  background: inherit;
+  margin: 0;
+  padding: 0;
+}
+.skills{
+  transition-duration: .4s;
+  opacity:0;
+  font-size:16px;
+  color:#d2cbcc;
 }
 
 @media only screen and (max-width: 775px){

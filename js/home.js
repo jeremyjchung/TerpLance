@@ -19,7 +19,6 @@ $(document).ready(function() {
     docBody[0].classList.remove('active');
   });
 
-
   if( $(this).width() < 500 ) {
       document.getElementById("strong").innerHTML = "TerpLance";
       document.getElementById("icon-and-name").style.width="225px";
